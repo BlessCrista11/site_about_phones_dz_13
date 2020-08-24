@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+    font-family: 'lobsterregular';
+    src: url('../fonts/lobster/lobster-regular-webfont.eot');
+    src: url('../fonts/lobster/lobster-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lobster/lobster-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lobster/lobster-regular-webfont.woff') format('woff'),
+         url('../fonts/lobster/lobster-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CaveatRegular';
+    src: url('../fonts/Caveat/CaveatRegular.eot');
+    src: url('../fonts/Caveat/CaveatRegular.eot') format('embedded-opentype'),
+         url('../fonts/Caveat/CaveatRegular.woff2') format('woff2'),
+         url('../fonts/Caveat/CaveatRegular.woff') format('woff'),
+         url('../fonts/Caveat/CaveatRegular.ttf') format('truetype'),
+         url('../fonts/Caveat/CaveatRegular.svg#CaveatRegular') format('svg');
+}
+/*бряка*/
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+	display: block;
+	}	
+	body {
+	line-height: 1;
+	}
+	ol, ul {
+	list-style: none;
+	}
+	blockquote, q {
+	quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+	content: '';
+	content: none;
+	}
+	table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+/*основные		*/
+		h1,h2,h3 {text-align: center}
+		h2 {color: grey; font-weight: 800; font-size: 35px;}
+		h3 {font-weight: 800; font-size: 30px;}
+		p {padding: 5px 0}
+
+		.main {width: 1200px;
+		 margin: 0 auto;
+		  border: 5px solid red;
+		  background: silver;
+		position: relative;
+		text-align:center;
+	}
+
+.first_phones,.button_phones,.touch_phones,.modern_phones{
+		 	border: solid yellow; padding:0 5px;
+		 	margin: 15px 20px;
+
+		 }
+.brands_name,.menu_left,.menu_right{
+			border: solid green; background: lime;
+			padding: 10px 5px;
+		}
+
+
+
+.simens_brand_name {color: #009999}
+.samsung_brand_name {color: #004da3}
+.nokia_brand_name {color: #1c4598}
+
+.menu_top{
+	padding: 20px 0;
+	border-bottom: solid green 3px;
+	position: relative;
+}
+
+
+li:hover{
+	/*color: white;
+	background: green;
+	outline:  lime solid 2px;
+	*/
+	background: yellow;
+
+}
+.ul_1{
+	font-size: 0;
+	text-align: center;
+	z-index: 20;
+	font-family: 'Press Start 2P', cursive;
+
+}
+
+
+.list_main_1_lvl{
+	background: lime;
+	outline:  green solid 2px;
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+	perspective: 500px;	
+}
+
+
+.ul_2{
+	padding-top: 10px;
+	position: absolute;
+/*	top: 100%;*/
+	left: 0;
+	width: 100%;
+	/*display: none;*/
+	z-index: 10;
+	transition: all 1s ease;
+	transform: rotateX(-90deg);
+	transform-origin: 0 0 00px;
+	font-family: 'lobsterregular';
+
+
+
+		
+}
+
+.list_main_1_lvl .ul_2{
+	backface-visibility: hidden;
+	-moz-backface-visibility: hidden;		
+}
+.list_main_1_lvl:hover .ul_2{	
+	display: block;	
+	transition: all 2s ease, width 0s ease;
+	transform: rotateX(00deg);
+	backface-visibility: visible;
+	-moz-backface-visibility: visible;		
+}
+
+.list_main_2_lvl{
+	background: lime;	
+	outline:  green solid 2px;
+	position: relative;	
+	/*background-color: rgba(255,255,255,0);*/
+}
+
+.list_main_2_lvl:hover{
+	background: red;	
+	outline:  green solid 2px;
+	position: relative;
+	transition: background 3s ease;
+}
+.ul_3{
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	padding-right: 10px;
+	/*display: none;	*/
+	z-index: -5;
+	transition: right 3s ease;
+	font-family:'CaveatRegular';
+}
+
+.list_main_2_lvl:hover .ul_3{
+	display: block;
+	right: 100%;
+}
+
+.list_main_3_lvl{
+	/*z-index: 5*/
+	background: lime;
+	outline:  green solid 2px;
+	
+}
+
+li:first-child {
+	margin-left: 0;
+}
+.list_main_1_lvl a{
+	text-decoration-line: none;
+	font-size: 30px;
+	font-weight: 600;
+	color: green;
+	display: block;
+	/*padding:10px 30px ;	*/
+	padding:10px 30px 10px 80px;
+}
+
+.list_main_2_lvl a{
+	
+	padding:10px 30px 10px 30px;
+}
+
+.ul_2>li:nth-child(3)>a{
+	
+	padding:10px 30px 10px 80px;
+}
+
+.ul_1>li:last-child>a{
+	
+	padding:10px 80px 10px 30px;
+}
+
+		.menu_left {
+			background: lime;
+			left: 0;
+			top:calc(50% - 300px);
+			/*margin:-150px 0 0 0;*/
+			width:300px;			
+			position: fixed;
+			z-index: 5;
+			margin:auto 0;						
+		}
+
+			.menu_right {
+				top:calc(50% - 160px);
+			background: lime;
+			right: -260px; 
+			 
+			
+			width:250px;
+			height: 300px;			
+			position: fixed;
+			z-index: 5;			
+			transform: rotate(270deg);
+			transition: right 2s ease;			
+		}
+		.menu_right:hover {
+			top:calc(50% - 160px);
+			background: lime;
+			right: 30px; 
+			 
+			/*top:50%;			*/
+			width:250px;
+			height: 300px;			
+			position: fixed;
+			z-index: 5;			
+			/*transform: rotate(270deg);	*/
+			transition: right 2s ease;		
+		}
+
+.right_menu_conteiner{
+	margin-top: 50px;
+	display: flex;
+	width: 150px;
+	flex-wrap: wrap;
+	justify-content: center;
+	transform: rotate(45deg);
+	padding: 5px 0;
+	margin: 100px auto;
+
+
+}
+.in_right_menu{
+margin: 10px;
+overflow: hidden;	
+}
+
+	.in_right_menu a{
+			width: 50px;
+			height: 50px;
+			
+			display: block;
+			background: url('../img/css_sprites.png');
+
+	}
+	.f_b>a{
+			background-position: -300px 0;
+			/*transform: rotate(45deg);
+			transform: scale(1, 1);*/
+			transform: rotate(45deg) scale(1.3, 1.3);
+			overflow: hidden;
+		}
+	.i_g>a{
+			background-position: -350px 0;
+			transform: rotate(45deg) scale(1.3, 1.3);
+			overflow: hidden;
+		}
+			.l_i>a{
+			background-position: -400px 0;
+			transform: rotate(45deg) scale(1.3, 1.3);
+			overflow: hidden;
+		}
+	.t_g>a{
+			background-position: -450px 0;
+			transform: rotate(45deg) scale(1.3, 1.3);
+			overflow: hidden;
+		}
+---------------------------------------------------------------------------------
+
+.img{
+	display: inline-block;
+	position: relative;
+	}
+
+
+.picture_description{		
+			padding: 0;
+			display: none;
+		}
+
+.img:hover .picture_description{
+			background-color: rgba(255, 255, 255, 0.5);
+			/*width: calc(100% - 15px);*/
+			width: 100%;
+			height: 100px;			
+			top: 50%;
+			margin-top: -50px;
+			margin-left: 0;
+			z-index: 5;
+			position: absolute;
+			text-align: justify;
+			display: block;
+		}
+
+		.list_main_1_lvl>a:before{
+				content: "";
+			background: url('../img/css_sprites.png');
+			
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			
+			left: 0;
+			top: 0;
+		}
+		
+		.ul_1>li:last-child>a:before {
+			
+					content: "";
+			background: url('../img/css_sprites.png');
+			
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 0;
+			left: auto;
+			top: 0;
+
+			}
+			.ul_2>li:nth-child(3)>a:before{
+		content: "";
+			background: url('../img/css_sprites.png');
+			
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+
+
+		.ul_1>li>a:before{
+			background-position: -00px 0;
+		}
+		.ul_1>li+li>a:before{
+			background-position: -50px 0;
+		}
+		.ul_1>li:last-child>a:before{
+			background-position: -100px 0;
+		}
+		.ul_2>li:nth-child(3)>a:before{
+			background-position: -150px 0;
+		}
+		
+
+
+		.ul_1>li+li+li:hover>a:before{
+			background-position: -250px 0;
+		}
+		.ul_2>li+li:hover>a:before{
+			background-position: -200px 0;}
+		
+
+/*нижнее меню*/
+	.menu_floor{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	border-top: solid green 3px;
+	}
+
+	.menu_floor a{
+			width: 50px;
+			height: 50px;
+			display: block;
+			background: url('../img/css_sprites.png');
+	}
+	.menu_floor li+li{
+	margin-left: 25px;
+	}
+	.menu_floor li a{
+			background-position: -300px 0;
+		}
+		.menu_floor li+li a{
+			background-position: -350px 0;
+		}
+		.menu_floor li+li+li a{
+			background-position: -400px 0;
+		}
+		.menu_floor li+li+li+li a{
+			background-position: -450px 0;
+		}
+		.menu_floor li+li+li+li+li a{
+			background-position: -500px 0;
+		}
+		/*.menu_floor li+li+li+li+li+li a{
+			background-position: -550px 0;
+		}*/
+
